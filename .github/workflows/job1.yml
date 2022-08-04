@@ -4,4 +4,4 @@ on:
   
 jobs:
   testjob:
-    uses: .github/workflows/Job2.yml@main
+    uses: abhishekNKamble/github-slideshow/edit/main/.github/workflows/job2.yml@main
