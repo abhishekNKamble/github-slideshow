@@ -1,0 +1,15 @@
+name: job2
+on:
+  workflow_dispatch:
+  workflow_call:
+jobs:
+  test1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: opsless/ms-teams-github-actions@main
+        with:
+          github-token: ${{ github.token }}
+          webhook-uri: https://sasoffice365.webhook.office.com/webhookb2/916137af-ddd2-414a-89a3-fc4ea8b76957@b1c14d5c-3625-45b3-a430-9552373a0c2f/JenkinsCI/917aefeb984a43b09c57dd35904076dc/191827ef-9406-42df-bc45-18ef3083908f
+      - name: sleep
+        run: sleep 10s
