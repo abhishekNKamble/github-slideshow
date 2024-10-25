@@ -7,4 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: sleep
-        run: echo "Test passed"
+        run: |
+          sleep 10s
+          echo "Test passed"
