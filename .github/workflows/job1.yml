@@ -4,9 +4,9 @@ on:
   
 jobs:
   testjob:
-    uses: ./job2.yml@main
+    uses: abhishekNKamble/github-slideshow/.github/workflows/job2.yml@main
 
   checkJob:
     if: ${{ always() && ! ${{ skipped() || cancelled() }} }}
     needs: testjob
-    uses: ./job2.yml@main
+    uses: abhishekNKamble/github-slideshow/.github/workflows/job2.yml@main
