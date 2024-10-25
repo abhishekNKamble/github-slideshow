@@ -7,6 +7,6 @@ jobs:
     uses: abhishekNKamble/github-slideshow/.github/workflows/Job2.yml@main
 
   checkJob:
-    if: always() && !cancelled() && !skipped()
+    if: always() && !(cancelled || skipped)
     needs: testjob
     uses: abhishekNKamble/github-slideshow/.github/workflows/Job2.yml@main
